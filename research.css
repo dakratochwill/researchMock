@@ -1,0 +1,107 @@
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    top: 0;
+    max-width: 100%;
+    height: 75vh;
+    margin-bottom: 0px;
+}
+
+.jumbotron video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.jumbotron .container {
+    z-index: 2;
+    position: relative;
+    top: 30%;
+    color: #fff;
+    text-align: center;
+}
+
+.nav-pills {
+    font-size: 18px;
+    min-height:  height: 70px;
+}
+.nav-pills li a {
+    padding: 20px 10px;
+}
+.nav-pills li a.bme {
+    background: #f37721;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.nav-pills li a.clse {
+    background: #ed2b2e;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.nav-pills li a.cs {
+    background: #77c058;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.nav-pills li a.ece {
+    background: #00b2bb;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.nav-pills li a.mne {
+    background: #4186c6;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.nav-pills li a:hover {
+    color: #ffb300;
+    background: #222;
+}
+
+.gold-block {
+    background: #ffb300;
+    padding: 50px;
+}
+
+.gold-block p {
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+.gold-block span {
+    font-size: 40px;
+    color: #fff;
+}
+
+.gold-block span:last-of-type {
+    margin-left: 10px;
+}
+
+.gold-block .attr {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.white {
+    color: #fff;
+}
+
+.container .row {
+    margin-bottom: 50px;
+}
+.container .row:first-of-type {
+    margin-top: 50px
+}
+#content {
+    margin-bottom: 0px;
+}
