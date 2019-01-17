@@ -26,48 +26,63 @@
     text-align: center;
 }
 
-.nav-pills {
-    font-size: 18px;
-    min-height:  height: 70px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
 }
-.nav-pills li a {
-    padding: 20px 10px;
-}
-.nav-pills li a.bme {
+
+a.bme {
     background: #f37721;
+    padding: 20px;
     color: #fff;
-    border-radius: 0px;
+    text-decoration: none;
 }
 
-.nav-pills li a.clse {
+a.clse {
     background: #ed2b2e;
+    padding: 20px;
     color: #fff;
-    border-radius: 0px;
+    text-decoration: none;
 }
 
-.nav-pills li a.cs {
+a.cs {
     background: #77c058;
+    padding: 20px;
     color: #fff;
-    border-radius: 0px;
+    text-decoration: none;
 }
 
-.nav-pills li a.ece {
+a.ece {
     background: #00b2bb;
+    padding: 20px;
     color: #fff;
-    border-radius: 0px;
+    text-decoration: none;
 }
 
-.nav-pills li a.mne {
+a.mne {
     background: #4186c6;
+    padding: 20px;
     color: #fff;
-    border-radius: 0px;
+    text-decoration: none;
 }
 
-.nav-pills li a:hover {
+.grid a:hover {
+    background: #111;
     color: #ffb300;
-    background: #222;
 }
 
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.story-grid h2 a:hover {
+    color: #ffb300;
+    text-decoration: none;
+}
 .gold-block {
     background: #ffb300;
     padding: 50px;
@@ -92,6 +107,7 @@
     font-weight: 700;
     margin-top: 5px;
 }
+
 .white {
     color: #fff;
 }
@@ -99,9 +115,28 @@
 .container .row {
     margin-bottom: 50px;
 }
+
 .container .row:first-of-type {
     margin-top: 50px
 }
+
 #content {
     margin-bottom: 0px;
+}
+.story-title {
+    line-height: 1.2;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.dept-date {
+    color: #555;
+    font-style: italic;
+    font-size: 15px;
+}
+@media screen and (max-width:997px) {
+    .grid,
+    .story-grid {
+        grid-template-columns: 1fr;
+
+    }
 }
